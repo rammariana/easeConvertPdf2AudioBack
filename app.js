@@ -325,11 +325,14 @@ const upload = multer({ dest: "uploads/" });
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:8080",
+    origin: "https://pdf2audioconverter.netlify.app",
   })
 );
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:8080");
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    "https://pdf2audioconverter.netlify.app"
+  );
   res.setHeader(
     "Access-Control-Allow-Methods",
     "GET, POST, OPTIONS, PUT, PATCH, DELETE"
