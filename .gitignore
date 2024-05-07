@@ -1,0 +1,11 @@
+# Ignorar el directorio node_modules
+node_modules/
+
+# Ignorar archivos de registro
+*.log
+
+# Ignorar archivos de respaldo de Visual Studio Code
+.vscode/
+
+# Ignorar archivos .env
+.env
