@@ -368,7 +368,7 @@ app.post("/text2audio", upload.single("archivo"), (req, res) => {
         let text = pdfData.text;
 
         // Convertir texto a audio utilizando say
-        say.export(text, "Microsoft David Desktop", 1, "audio.wav", (err) => {
+        say.export(text, "Linux", 1, "audio.wav", (err) => {
           if (err) {
             console.error("Error al convertir texto a audio:", err);
             res.status(500).send("Error al convertir texto a audio");
